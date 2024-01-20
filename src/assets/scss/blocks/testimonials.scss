@@ -1,0 +1,177 @@
+.testimonials {
+    padding: 12rem 0 13.8rem;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7.3rem 6.8rem;
+
+        @include breakpoint($tablet) {
+            gap: 3.5rem 3rem;
+        }
+
+        @include breakpoint($mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.testimonial {
+    position: relative;
+    user-select: none;
+
+    &_main &__item {
+        background-color: $color-red;
+    }
+
+    &_main &__pattern {
+        left: -6rem;
+        bottom: -4.6rem;
+        animation: movePattern 8s linear infinite;
+    }
+
+    &_main &__title,
+    &_main &__text,
+    &_main &__name,
+    &_main &__prof {
+        color: $color-white;
+    }  
+
+    &__pattern {
+        position: absolute;
+        left: -2rem;
+        bottom: -1.7rem;
+        z-index: 1;
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        padding: 7rem 4rem 5.5rem 7.5rem;
+        border-radius: 1.2rem;
+        border-top-right-radius: 16rem;
+        background-color: $color-cream;
+        z-index: 2;
+
+        @include breakpoint($mobile-small) {
+            padding: 7rem 4rem 5.5rem;
+        }
+    }
+
+    &__title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-dark;
+        margin-top: .5rem;
+
+        @include breakpoint($mobile-small) {
+            font-size: 3rem;
+        }
+    }
+    
+    &__text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
+        font-family: $font-poppins;
+        font-size: 2.2rem;
+        line-height: 1.72;
+        color: $color-gray;
+        margin: 2rem 0 5rem;
+
+        @include breakpoint($mobile-small) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__avatar {
+        width: 12rem;
+        height: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @include breakpoint($mobile-small) {
+            display: none;
+        }
+
+        & > img {
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        line-height: 1;
+    }
+
+    &__name {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-dark;
+
+        @include breakpoint($mobile-small) {
+            font-size: 3rem;
+        }
+    }
+
+    &__prof {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-red;
+    }
+}
+
+.testimonial-slider {
+    & .swiper-pagination {
+        bottom: 2.05rem;
+        right: 4rem;
+        left: auto;
+        width: auto;
+    }
+
+    & .swiper-pagination-bullet {
+        width: 1.3rem;
+        height: 1.3rem;
+        background: transparent;
+        border: .3rem solid $color-white;
+        opacity: 1;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: $color-white;
+    }
+}
+
+@keyframes movePattern {
+    0% {
+        transform: translateY(-4.5rem);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-4.5rem);
+    }
+}

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("../fonts/BarlowCondensed/BarlowCondensed-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("../fonts/BarlowCondensed/BarlowCondensed-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("../fonts/BarlowCondensed/BarlowCondensed-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed/BarlowCondensed-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Mohave";
+    src: url("../fonts/Mohave/Mohave-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mohave";
+    src: url("../fonts/Mohave/Mohave-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ICON FONTS */
+
+@font-face {
+  font-family: 'Font-Icons';
+  src:  url('../iconfonts/Font-Icons/Font-Icons.eot?vmlr4a');
+  src:  url('../iconfonts/Font-Icons/Font-Icons.eot?vmlr4a#iefix') format('embedded-opentype'),
+    url('../iconfonts/Font-Icons/Font-Icons.ttf?vmlr4a') format('truetype'),
+    url('../iconfonts/Font-Icons/Font-Icons.woff?vmlr4a') format('woff'),
+    url('../iconfonts/Font-Icons/Font-Icons.svg?vmlr4a#Font-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Font-Icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-magnifying-glass-solid:before {
+  content: "\e905";
+}
+.icon-google-plus-g:before {
+  content: "\e904";
+}
+.icon-star:before {
+  content: "\e903";
+}
+.icon-twitter-1:before {
+  content: "\e900";
+}
+.icon-facebook-f-1:before {
+  content: "\e901";
+}
+.icon-instagram-1:before {
+  content: "\e902";
+}
+
+
+  

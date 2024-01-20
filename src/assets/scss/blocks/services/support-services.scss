@@ -1,0 +1,144 @@
+.support-services {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    &__inner {
+        position: relative;
+        padding: 20rem 0 14rem;
+        z-index: 10;
+
+        @include breakpoint($mobile-medium) {
+            padding: 12rem 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 57.26%;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 12;
+
+        @include breakpoint($mobile) {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateX(50%);
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 74rem;
+        z-index: 11;
+
+        & > img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        @include breakpoint($laptop) {
+            transform: translateX(30%);
+        }
+
+        @include breakpoint($mobile-medium) {
+            height: 60rem;
+            width: 80%;
+        }
+
+        @include breakpoint($mobile-dino) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-white;
+        margin-bottom: 1.7rem;
+
+        @include breakpoint($mobile-medium) {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-white;
+
+        @include breakpoint($mobile-medium) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__button {
+        width: 30.5rem;
+        margin: 5rem auto 2.5rem;
+
+        @include breakpoint($mobile) {
+            margin: 5rem 0 2.5rem;
+        }
+
+        @include breakpoint($mobile-medium) {
+            width: 27rem;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: nowrap;
+        gap: .8rem;
+        font-family: $font-poppins;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-white;
+
+        @include breakpoint($mobile) {
+            justify-content: flex-start;
+        }
+
+        @include breakpoint($mobile-medium) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__link {
+        font-family: $font-poppins;
+        font-size: 2rem;
+        font-weight: 500;
+        white-space: nowrap;
+        color: $color-white;
+        transition: opacity .15s ease;
+
+        &:hover,
+        &:focus {
+            opacity: .75;
+        }
+
+        @include breakpoint($mobile-medium) {
+            font-size: 1.8rem;
+        }
+    }
+}

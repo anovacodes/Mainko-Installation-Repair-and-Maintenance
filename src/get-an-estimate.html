@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('./partials/head.html', {
+        "title": "Mainko – Get an Estimate"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        @@include('./partials/header.html', {
+            linkColor: "white"
+        })
+
+        @@include('./partials/subheader.html', {
+            title: "Get an Estimate"
+        })
+
+        <section class="section section_estimate">
+            <div class="container">
+                <div class="estimate">
+                    <div class="estimate__header" style="background-image: url('./assets/images/services/worker-3.png');">
+                        <div class="estimate__info">
+                            <h2 class="estimate__title">free quote/estimate!</h2>
+                            <p class="estimate__text">Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.</p>
+                            <div class="estimate__contact">
+                                <span>Emergency Direct Call Me:</span>
+                                <a class="estimate__link" href="tel:+12343501236">+1(234) 350 1236</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="#">
+                        <div class="contact-form__section">
+                            <h3 class="contact-form__title">General Information</h3>
+
+                            <div class="contact-form__body">
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">Complete Name</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields contact-form__fields_double">
+                                            <input class="input" type="text" name="first-name" autocomplete="given-name" placeholder="First" required>
+                                            <input class="input" type="text" name="last-name" autocomplete="family-name" placeholder="Last" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">Email Address</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <input class="input" type="email" name="email" autocomplete="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">Phone No</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <input class="input" type="tel" name="phone" autocomplete="tel" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">Address</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <input class="input" type="text" name="address" autocomplete="address-line1" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">City / State</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields contact-form__fields_double">
+                                            <input class="input" type="text" name="city" autocomplete="address-level2" placeholder="City" required>
+                                            <input class="input" type="text" name="state" autocomplete="address-level1" placeholder="State" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form__section">
+                            <h3 class="contact-form__title">Estimate Needed For (check all that apply)</h3>
+
+                            <div class="contact-form__body">
+                                <div class="contact-form__item contact-form__item_checkbox">
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-1" type="checkbox" name="furnace" value="Furnace">
+                                        </div>
+                                        <label for="checkbox-1">Furnace</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-2" type="checkbox" name="log" value="Log Set">
+                                        </div>
+                                        <label for="checkbox-2">Log Set</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-3" type="checkbox" name="pump" value="Heat Pump">
+                                        </div>
+                                        <label for="checkbox-3">Heat Pump</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-4" type="checkbox" name="conditioner" value="Air Conditioner">
+                                        </div>
+                                        <label for="checkbox-4">Air Conditioner</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-5" type="checkbox" name="duct" value="Duct Cleaning">
+                                        </div>
+                                        <label for="checkbox-5">Duct Cleaning</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-6" type="checkbox" name="cooling" value="Ductless Heating & Cooling">
+                                        </div>
+                                        <label for="checkbox-6">Ductless Heating & Cooling</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-7" type="checkbox" name="water-heater" value="Water Heater">
+                                        </div>
+                                        <label for="checkbox-7">Water Heater</label>
+                                    </div>
+
+                                    <div class="contact-form__checkbox">
+                                        <div>
+                                            <input class="checkbox" id="checkbox-8" type="checkbox" name="boiler" value="Boiler">
+                                        </div>
+                                        <label for="checkbox-8">Boiler</label>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">Other</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <input class="input" type="text" name="other" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item contact-form__item_start">
+                                    <p class="contact-form__name">Comments</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <textarea class="textarea" name="comment"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">I'd Prefer To Be Contacted By</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields contact-form__fields_radio">
+                                            <div class="contact-form__radio">
+                                                <div>
+                                                    <input class="radio" id="radio-1" type="radio" name="contact-by" value="email" checked>
+                                                </div>
+                                                <label for="radio-1">Email Address</label>
+                                            </div>
+
+                                            <div class="contact-form__radio">
+                                                <div>
+                                                    <input class="radio" id="radio-2" type="radio" name="contact-by" value="phone">
+                                                </div>
+                                                <label for="radio-2">Phone No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">How Did You Hear About Us?</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <div>
+                                                <select id="select-1" name="hear">
+                                                    <option value="Sort 1">Sort 1</option>
+                                                    <option value="Sort 2">Sort 2</option>
+                                                    <option value="Sort 3">Sort 3</option>
+                                                    <option value="Sort 4">Sort 4</option>
+                                                    <option value="Sort 5">Sort 5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__item">
+                                    <p class="contact-form__name">Join Our Email List</p>
+
+                                    <div class="contact-form__inputs">
+                                        <div class="contact-form__fields">
+                                            <div class="contact-form__checkbox contact-form__checkbox_big">
+                                                <div>
+                                                    <input class="checkbox" id="checkbox-9" type="checkbox" name="subscribe" value="true">
+                                                </div>
+                                                <label for="checkbox-9">Yes! Sign me up for the email list</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form__footer">
+                            @@include("./partials/UI/button.html", {
+                                value: "Submit Request",
+                                options: {
+                                    type: "button",
+                                    buttonType: "submit"
+                                },
+                                classes: "contact-form__button button_small button_arrow"
+                            })
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        @@include('./partials/footer.html')
+        @@include('./partials/sidemenu.html')
+        @@include('./partials/instagram-modal.html')
+    </div>
+    
+</body>
+</html>

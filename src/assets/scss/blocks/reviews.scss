@@ -1,0 +1,144 @@
+.reviews {
+    height: 55rem;
+    padding-bottom: 9.5rem;
+
+    & .container {
+        height: 100%;
+    }
+
+    &__inner {
+        height: inherit;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1.23fr 1fr;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+    }   
+
+    &__avatars {
+        position: relative;
+        user-select: none;
+        z-index: 9;
+
+        @include breakpoint($tablet) {
+            display: none;
+        }
+    }
+
+    &__avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        cursor: pointer;
+
+        & > img {
+            max-width: 30rem;
+            max-height: 30rem;
+            pointer-events: none;
+        }
+
+        &[data-index="0"] {
+            top: 4.3rem;
+            left: 3.5rem;
+        }
+
+        &[data-index="1"] {
+            top: auto;
+            bottom: 3rem;
+            left: 16rem;
+        }
+
+        &[data-index="2"] {
+            top: 16.5rem;
+            left: 11.6rem;
+        }
+
+        &[data-index="3"] {
+            top: auto;
+            bottom: 2.6rem;
+            left: 1.5rem;
+        }
+
+        &[data-index="4"] {
+            top: 2rem;
+            left: 8.3rem;
+        }
+    }
+
+    &__background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        user-select: none;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.15;
+        color: $color-red;
+        margin: 1.5rem 0 2.5rem;
+    }
+
+    &__text {
+        font-family: $font-poppins;
+        font-size: 2.2rem;
+        line-height: 1.72;
+        color: $color-dark;
+        margin-bottom: 4rem;
+
+        @include line-clamp(5);
+    }
+
+    &__author,
+    &__prof {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1;
+        color: $color-dark;
+        margin-top: auto;
+    }
+
+    &__prof {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        padding-bottom: 7.5rem;
+    }
+}
+
+.reviews-slider {
+    width: 100%;
+    z-index: 10;
+
+    & .swiper-pagination-bullet {
+        width: 1.4rem;
+        height: 1.4rem;
+        background: transparent;
+        border: .3rem solid $color-red;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: $color-red;
+    }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('./partials/head.html', {
+        "title": "Mainko – Maintenance Programs"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        @@include('./partials/header.html', {
+            linkColor: "white"
+        })
+
+        @@include('./partials/subheader.html', {
+            title: "Maintenance Programs"
+        })
+
+        <section class="tasks">
+            <div class="container">
+                <h2 class="tasks__title">Maintenance requirements/tasks that needs to be carried</h2>
+
+                <div class="tasks__inner">
+                    <div class="tasks__info">
+                        <p class="tasks__text">Ut tellus dolor, dapibus eget, elementum vel, cursus eleif end, elit. Aenean auctor wisi et urna. Aliquam ei at volut pat. Duis acturpis. Ut tellus dolor,get, elemen dapibus e get, elementum vel, cursus eleifend, elit.</p>
+
+                        <ul class="tasks__list">
+                            <li class="tasks__item">Planned Maintenance</li>
+                            <li class="tasks__item">Repairs to maintain the fabric</li>
+                            <li class="tasks__item">Projects Management & Contracting</li>
+                            <li class="tasks__item">Mechanical & Electrical Services</li>
+                            <li class="tasks__item">Will meet the standards required</li>
+                        </ul>
+                    </div>
+
+                    <div class="tasks__coupon">
+                        @@include("./partials/coupon.html", {
+                            title: "Repairs from just",
+                            color: "red"
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section_pricing">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Pricing Plans</h2>
+                    <h3 class="section__subtitle">Our Protection Plans</h3>
+                </div>
+
+                <div class="pricing">
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <div class="pricing-card__circle">
+                                <div class="pricing-card__icon">
+                                    <img src="assets/images/services/pricing/1.png" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-card__body">
+                            <div class="pricing-card__content">
+                                <h3 class="pricing-card__title">Appliance Installations</h3>
+
+                                <p class="pricing-card__price">
+                                    <span>$120</span>
+                                    <span>for month</span>
+                                </p>
+
+                                <ul class="pricing-card__list">
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Integrated Fridge Freezer</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Washing Machines</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Tumble Dryer</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Dishwasher</span>
+                                    </li>
+                                </ul>
+
+                                @@include("./partials/UI/button.html", {
+                                    value: "Purchase Now",
+                                    options: {
+                                        type: "link",
+                                        href: "./service-details.html"
+                                    },
+                                    classes: "pricing-card__button button_small"
+                                })
+                            </div>
+
+                            <img class="pricing-card__avatar" src="assets/images/team/mark.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <div class="pricing-card__circle">
+                                <div class="pricing-card__icon">
+                                    <img src="assets/images/services/pricing/2.png" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-card__body">
+                            <div class="pricing-card__content">
+                                <h3 class="pricing-card__title">Plumbing And Heating</h3>
+
+                                <p class="pricing-card__price">
+                                    <span>$120</span>
+                                    <span>for month</span>
+                                </p>
+
+                                <ul class="pricing-card__list">
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Powerflushing</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Central Heating Installation</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Boiler Repair/ Service</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Boiler Installation</span>
+                                    </li>
+                                </ul>
+
+                                @@include("./partials/UI/button.html", {
+                                    value: "Purchase Now",
+                                    options: {
+                                        type: "link",
+                                        href: "./service-details.html"
+                                    },
+                                    classes: "pricing-card__button button_small"
+                                })
+                            </div>
+
+                            <img class="pricing-card__avatar" src="assets/images/team/walkar.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <div class="pricing-card__circle">
+                                <div class="pricing-card__icon">
+                                    <img src="assets/images/services/pricing/3.png" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-card__body">
+                            <div class="pricing-card__content">
+                                <h3 class="pricing-card__title">Emergency Locksmiths</h3>
+
+                                <p class="pricing-card__price">
+                                    <span>$120</span>
+                                    <span>for month</span>
+                                </p>
+
+                                <ul class="pricing-card__list">
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Locked out Service</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Local 24 hour locksmith</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Fresh Lock Installations</span>
+                                    </li>
+
+                                    <li class="pricing-card__item">
+                                        <div>
+                                            <div class="pricing-card__checkmark">
+                                                <img src="assets/images/icons/check-mark-2.png" alt="icon">
+                                            </div>
+                                        </div>
+                                        <span class="pricing-card__text">Car Locksmiths</span>
+                                    </li>
+                                </ul>
+
+                                @@include("./partials/UI/button.html", {
+                                    value: "Purchase Now",
+                                    options: {
+                                        type: "link",
+                                        href: "./service-details.html"
+                                    },
+                                    classes: "pricing-card__button button_small"
+                                })
+                            </div>
+
+                            <img class="pricing-card__avatar" src="assets/images/team/casie.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('./partials/footer.html')
+        @@include('./partials/sidemenu.html')
+        @@include('./partials/instagram-modal.html')
+    </div>
+    
+</body>
+</html>

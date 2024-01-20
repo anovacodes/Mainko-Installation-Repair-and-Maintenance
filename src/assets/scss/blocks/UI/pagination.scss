@@ -1,0 +1,86 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @include breakpoint($mobile) {
+        gap: 1.5rem;
+    }
+
+    @include breakpoint($mobile-small) {
+        gap: 3rem;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint($mobile-small) {
+            display: none;
+        }
+    }
+
+    &__item:last-child &__link {
+        border-right: 0;
+    }
+
+    &__item.active &__link {
+        color: $color-red;
+    }
+
+    &__link {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: $color-dark;
+        padding: .8rem 1.8rem;
+        border-right: .1rem solid #eaeaea;
+        transition: color .15s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-red;
+        }
+
+        @include breakpoint($mobile) {
+            padding: .8rem 1.2rem;
+        }
+    }
+
+    &__control {
+        display: inline-block;
+        width: 11rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: #1e1e1e;
+        padding: 1.9rem;
+        border-radius: .8rem;
+        transition: background-color .15s ease;
+
+        &__prev {
+            border-top-left-radius: 4rem;
+
+            &:hover {
+                background-color: #464646;
+            }
+        }
+
+        &__next {
+            background-color: $color-red;
+            border-top-right-radius: 4rem;
+
+            &:hover {
+                background-color: $color-red-hover;
+            }
+        }
+
+        @include breakpoint($mobile) {
+            padding: 1.4rem;
+            width: 10rem;
+        }
+    }
+}

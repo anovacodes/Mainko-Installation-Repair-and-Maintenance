@@ -1,0 +1,29 @@
+.faq {
+    padding: 11rem 0 12rem;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem 3rem;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+
+        &_single {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1.05;
+        color: $color-dark;
+        margin-bottom: 5rem;
+
+        @include breakpoint($mobile) {
+            font-size: 3.8rem;
+        }
+    }
+}

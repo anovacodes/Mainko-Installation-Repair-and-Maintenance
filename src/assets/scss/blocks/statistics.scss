@@ -1,0 +1,68 @@
+.statistics {
+    padding: 8.7rem 0 12rem;
+
+    @include breakpoint($mobile) {
+        padding: 7rem 0;
+    }
+
+    &_about {
+        padding: 11rem 0 12rem;
+
+        @include breakpoint($mobile) {
+            padding: 7rem 0;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem 3rem;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($mobile-small) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        position: relative;
+        text-align: center;
+
+        &:hover::after {
+            transform: translateY(-2rem);
+            background-color: $color-red;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            min-width: 3rem;
+            width: 20.37%;
+            height: .6rem;
+            background-color: #dadada;
+            margin: 4rem auto 0;
+            transition: transform .25s ease,
+                        background-color .25s ease;
+        }
+    }
+
+    &__number {
+        font-size: 7.616rem;
+        font-weight: 700;
+        line-height: .9;
+        text-transform: uppercase;
+        color: $color-red;
+        margin-bottom: 1.1rem;
+    }
+
+    &__title {
+        font-family: $font-mohave;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #3b3b3b;
+    }
+}

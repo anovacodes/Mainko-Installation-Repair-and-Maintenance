@@ -1,0 +1,31 @@
+.checkbox {
+    position: relative;
+    appearance: none;
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: $color-white;
+    margin: 0;
+    border: .4rem solid #cfcfcf;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: border-color .1s ease;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: .3rem;
+        scale: 0;
+        background-color: $color-red;
+        transition: scale .1s ease;
+    }
+
+    &:checked {
+        border-color: $color-red;
+
+        &::before {
+            scale: 1;
+        }
+    }
+}

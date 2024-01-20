@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('./partials/head.html', {
+        "title": "Mainko – Service Details"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        @@include('./partials/header.html', {
+            linkColor: "white"
+        })
+
+        @@include('./partials/subheader.html', {
+            title: "Service Details",
+            middleLinks: ["Service"]
+        })
+
+        <div class="service-details">
+            <div class="container">
+                <div class="service-details__header">
+                    <h1 class="service-details__title">Plumbing Services</h1>
+                    <p class="service-details__description">Safe House, Plumbing Services teams of qualified plumbers work throughout London and the south of the UK a daily basis. Plumbing problems are often the reason for emergency call-outs. Safehouse pride itself on times and effective repairs, instals of boilers, blocked toilets or drains, leaks or overflows.</p>
+                </div>
+
+                <div class="service-details__media">
+                    <div class="service-details__icon">
+                        <img src="assets/images/services/house.png" alt="House">
+                    </div>
+
+                    <div class="service-details__image">
+                        <img src="assets/images/coupons/1.jpg" alt="Image">
+                    </div>
+                </div>
+
+                <div class="service-details__body">
+                    <div class="wysiwyg-editor">
+                        <p>Safe House, Plumbing Services teams of qualified plumbers work throughout London and the south of the UK Plumbing problems are often the reason for emergency call-outs.  Safehouse pride itself on fast response repairs, instals of boilers, blocked toilets or drains, leaks or overflows. </p>
+                    </div>
+
+                    <ul class="service-details__list">
+                        <li class="service-details__item">
+                            <span>Airlocks</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Plumbing installation, maintenance and repairs</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Ball valves</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Pump installation, maintenance and repairs</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Bathroom installation and maintenance</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Radiator installation, maintenance and repairs</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Burst pipes</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Saniflo installation, maintenance and repairs</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Heating installation, maintenance and repairs</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Shower installation, maintenance and repairs</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Drain blockages</span>
+                        </li>
+
+                        <li class="service-details__item">
+                            <span>Stopcock installation, maintenance and repairs</span>
+                        </li>
+                    </ul>
+
+                    <div class="service-details__video" style="background-image: url('./assets/images/services/worker-big.jpg');" data-type="modal">
+                        <button class="play-button"></button>
+                    </div>
+
+                    <div class="service-details__info">
+                        <div class="wysiwyg-editor">
+                            <p>Ut tellus dolor, dapibus eget, elementum vel, cursuseleifend, elit. Aenean auctor wisi et urna. Aliquam er at volutpat. Duis ac turpis. Ut tellus dolor, dapibus eget, elementum vel, cursuseleifend. Ut tellus dolor, d apibus eget, elementum vel, cursuseleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Ut tellus dolor, dapibus eget, elementum vel, cursuseleifend.</p>
+    
+                            <ul>
+                                <li>Planned Maintenance</li>
+                                <li>Always Facts. 100% Secure</li>
+                                <li>Repairs to maintain the fabric</li>
+                                <li>Cleaning Service Melbourne</li>
+                                <li>Projects Management & Contracting</li>
+                                <li>A perfect home is a happy home</li>
+                                <li>Mechanical & Electrical Services</li>
+                                <li>Services a software house provides</li>
+                                <li>Will meet the standards required</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section_services_support">
+            <div class="support-services" style="background-image: url(assets/images/support-services-bg.jpg)">
+                <div class="container">
+                    <div class="support-services__inner">
+                        <div class="support-services__content">
+                            <h2 class="support-services__title">Provide Building Maintenance Quality Services</h2>
+                            <h3 class="support-services__subtitle">100% DELIVERY GUARANTEED!</h3>
+    
+                            @@include("./partials/UI/button.html", {
+                                value: "Get  your free quotation",
+                                options: {
+                                    type: "link",
+                                    href: "./contacts.html"
+                                },
+                                classes: "support-services__button button_arrow"
+                            })
+    
+                            <div class="support-services__contacts">
+                                <span>Emergency Direct Call Me:</span>
+                                <a class="support-services__link" href="tel:+12343501236">+1(234) 350 1236</a>
+                            </div>
+                        </div>
+
+                        <div class="support-services__image">
+                            <img src="assets/images/services/worker-3.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        @@include('./partials/footer.html')
+        @@include('./partials/sidemenu.html')
+        @@include('./partials/instagram-modal.html')
+        @@include('./partials/modal.html')
+    </div>
+    
+</body>
+</html>

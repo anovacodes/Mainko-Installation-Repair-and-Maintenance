@@ -1,0 +1,86 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease;
+    user-select: none;
+
+    &.hidden {
+        z-index: $z-modal;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: $z-modal;
+    }
+
+    &.active &__item {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &__inner {
+        position: relative;
+        min-width: 0;
+        height: 100%;
+    }
+    
+    &__close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: block;
+        cursor: pointer;
+        z-index: 3001;
+        transition: opacity .15s ease;
+        
+        & > svg {
+            pointer-events: none;
+
+            & path {
+             
+                fill: $color-white;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            opacity: .7;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 75vh;
+        max-width: 85%;
+        transform: scale(0);
+        opacity: 0;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        background-color: transparent;
+        transition: transform .5s ease,
+                    opacity .5s ease;
+
+        &_video {
+            aspect-ratio: 16 / 9;
+            width: 60%;
+
+            @include breakpoint($mobile) {
+                width: 100%;
+            }
+
+            & > iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

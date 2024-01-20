@@ -1,0 +1,79 @@
+.comments-form {
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-dark;
+        margin-bottom: 4rem;
+
+        &_small {
+            font-size: 4rem;
+            margin-bottom: 3.5rem;
+        }
+
+        &_uppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__item {
+        display: flex;
+
+        &_double {
+            display: flex;
+            gap: 2rem;
+
+            @include breakpoint($mobile) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &__input,
+    &__textarea {
+        flex: 1;
+        font-family: $font-poppins;
+        font-size: 1.6rem;
+        line-height: 1;
+        color: $color-gray;
+        background-color: #fafafa;
+        border-radius: .6rem;
+        border-top-right-radius: 8rem;
+        padding: 2.25rem 3rem;
+        transition: background-color .2s ease,
+                    border-radius .3s ease;
+
+        &:focus {
+            background-color: #f1f1f1;
+            border-top-right-radius: .6rem;
+        }
+
+        &::placeholder {
+            color: $color-gray-light;
+        }
+    }
+
+    &__input {
+        
+    }
+
+    &__textarea {
+        display: block;
+        height: 21rem;
+        line-height: 1.75;
+        padding: 2.2rem 3rem;
+        resize: none;
+    }
+
+    &__button {
+        width: 22.5rem;
+    }
+}

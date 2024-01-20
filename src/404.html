@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('./partials/head.html', {
+        "title": "404 - Page Not Found"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        @@include('./partials/header.html', {
+            linkColor: "gray"
+        })
+
+        <div class="not-found" style="background-image: url('./assets/images/logos-bg.jpg');">
+            <div class="container">
+                <div class="not-found__inner">
+                    <div class="not-found__error">
+                        <div class="not-found__image">
+                            <img src="assets/images/icons/page.png" alt="Page">
+                        </div>
+                    </div>
+
+                    <h1 class="not-found__title">
+                        <span>ooooPS!</span>
+                        <span>Page Not founda</span>
+                    </h1>
+                    
+                    <p class="not-found__text">the resource you are looking for might have been removed had its name changed or is temporarily</p>
+
+                    <div class="not-found__search">
+                        <input class="not-found__input" type="text" name="search" placeholder="Enter your keyword.....">
+                        <i class="icon-magnifying-glass-solid"></i>
+                    </div>
+
+                    <a class="not-found__button" href="./index.html">
+                        <div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="17px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M16.430,9.062 C16.247,9.246 16.006,9.337 15.766,9.337 C15.526,9.337 15.286,9.246 15.102,9.062 L8.894,2.858 C8.693,2.657 8.336,2.657 8.134,2.858 L1.927,9.062 C1.560,9.429 0.965,9.429 0.598,9.062 C0.232,8.696 0.232,8.102 0.598,7.735 L6.806,1.531 C7.718,0.618 9.307,0.617 10.221,1.530 L12.070,3.377 L12.070,2.388 C12.070,1.870 12.490,1.449 13.008,1.449 C13.527,1.449 13.948,1.870 13.948,2.388 L13.948,5.254 L16.430,7.735 C16.797,8.102 16.797,8.696 16.430,9.062 ZM8.188,4.639 C8.368,4.459 8.660,4.459 8.841,4.639 L14.300,10.095 C14.387,10.181 14.435,10.298 14.435,10.421 L14.435,14.400 C14.435,15.334 13.678,16.091 12.744,16.091 L10.040,16.091 L10.040,11.907 L6.988,11.907 L6.988,16.091 L4.285,16.091 C3.350,16.091 2.593,15.334 2.593,14.400 L2.593,10.421 C2.593,10.298 2.642,10.181 2.728,10.095 L8.188,4.639 Z"/>
+                                </svg>
+                            </div>
+    
+                            <span>Back to Home</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        @@include('./partials/footer.html')
+        @@include('./partials/sidemenu.html')
+        @@include('./partials/modal.html')
+        @@include('./partials/instagram-modal.html')
+    </div>
+    
+</body>
+</html>

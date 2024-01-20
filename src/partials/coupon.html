@@ -1,0 +1,19 @@
+<div class="coupon coupon_@@color">
+    <div class="coupon__inner">
+        <h3 class="coupon__title">
+            <span>@@title</span>
+            <span>£10 per month</span>
+        </h3>
+
+        <p class="coupon__text">Make life easy with our monthly direct debit payment plan.</p>
+
+        @@include("./UI/button.html", {
+            value: "Book and Appointment",
+            options: {
+                type: "link",
+                href: "./appointment.html"
+            },
+            classes: "coupon__button button_small"
+        })
+    </div>
+</div>

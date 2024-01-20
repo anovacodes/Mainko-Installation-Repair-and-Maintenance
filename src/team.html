@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('./partials/head.html', {
+        "title": "Mainko – Our Team"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        @@include('./partials/header.html', {
+            linkColor: "white"
+        })
+
+        @@include('./partials/subheader.html', {
+            title: "Our team"
+        })
+
+        <div class="team">
+            <div class="container">
+                <ul class="team__list">
+                    <li class="team__item">
+                        @@include("./partials/employee.html", {
+                            name: "Mark Rokki",
+                            avatar: "assets/images/team/mark.png"
+                        })
+                    </li>
+
+                    <li class="team__item">
+                        @@include("./partials/employee.html", {
+                            name: "Walkar Dom",
+                            avatar: "assets/images/team/walkar.png"
+                        })
+                    </li>
+
+                    <li class="team__item">
+                        @@include("./partials/employee.html", {
+                            name: "Casie Chen",
+                            avatar: "assets/images/team/casie.png"
+                        })
+                    </li>
+
+                    <li class="team__item">
+                        @@include("./partials/employee.html", {
+                            name: "Harry Parker",
+                            avatar: "assets/images/team/harry.png"
+                        })
+                    </li>
+
+                    <li class="team__item">
+                        @@include("./partials/employee.html", {
+                            name: "Triksi Pellar",
+                            avatar: "assets/images/team/triksi.png"
+                        })
+                    </li>
+
+                    <li class="team__item">
+                        @@include("./partials/employee.html", {
+                            name: "Ulimo Rikki",
+                            avatar: "assets/images/team/ulimo.png"
+                        })
+                    </li>
+                </ul>
+
+                <div class="team__pagination">
+                    @@include("./partials/UI/pagination.html")
+                </div>
+            </div>
+        </div>
+
+        <section class="section section_customers">
+            <div class="container">
+                <div class="customers">
+                    <div class="customers__info">
+                        <h4 class="customers__suptitle">Advise and news</h4>
+                        <h3 class="customers__title">Thousands of satisfied customers</h3>
+
+                        @@include("./partials/UI/star-rating.html", {
+                            id: 1,
+                            showLink: true
+                        })
+                    </div>
+
+                    <div class="customers__testimonials">
+                        <div class="testimonial testimonial_main">
+                            <img class="testimonial__pattern" src="assets/images/patterns/1.png" alt="Pattern">
+
+                            <div class="swiper testimonial-slider" id="testimonial-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__item">
+                                            @@include("./partials/UI/star-rating.html", {
+                                                id: 2
+                                            })
+            
+                                            <h3 class="testimonial__title">Professional and friendly</h3>
+                                            <p class="testimonial__text">"My experience Southcoast Automotive Services was memorable because the team were professional and helpful, it was a relaxed and friendly."</p>
+                                            <div class="testimonial__author">
+                                                <div>
+                                                    <div class="testimonial__avatar">
+                                                        <img src="assets/images/testimonial/1.jpg" alt="Avatar">
+                                                    </div>
+                                                </div>
+            
+                                                <div class="testimonial__info">
+                                                    <p class="testimonial__name">Jakki james</p>
+                                                    <p class="testimonial__prof">Company Director</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__item">
+                                            @@include("./partials/UI/star-rating.html", {
+                                                id: 3
+                                            })
+            
+                                            <h3 class="testimonial__title">From its medieval origins</h3>
+                                            <p class="testimonial__text">"My experience Southcoast Automotive Services was memorable because the team were professional and helpful, it was a relaxed and friendly."</p>
+                                            <div class="testimonial__author">
+                                                <div>
+                                                    <div class="testimonial__avatar">
+                                                        <img src="assets/images/testimonial/2.png" alt="Avatar">
+                                                    </div>
+                                                </div>
+            
+                                                <div class="testimonial__info">
+                                                    <p class="testimonial__name">Jakki james</p>
+                                                    <p class="testimonial__prof">Company Director</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__item">
+                                            @@include("./partials/UI/star-rating.html", {
+                                                id: 4
+                                            })
+            
+                                            <h3 class="testimonial__title">Uniquely brand optimal</h3>
+                                            <p class="testimonial__text">"My experience Southcoast Automotive Services was memorable because the team were professional and helpful, it was a relaxed and friendly."</p>
+                                            <div class="testimonial__author">
+                                                <div>
+                                                    <div class="testimonial__avatar">
+                                                        <img src="assets/images/testimonial/3.png" alt="Avatar">
+                                                    </div>
+                                                </div>
+            
+                                                <div class="testimonial__info">
+                                                    <p class="testimonial__name">Jakki james</p>
+                                                    <p class="testimonial__prof">Company Director</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination" id="testimonial-slider__pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section_logos" style="background-image: url(assets/images/logos-bg.jpg)">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">What We Do</h2>
+                    <h3 class="section__subtitle">Brands we work with and believe in...</h3>
+                </div>
+
+                <div class="logos">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Logo" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Logo" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Logo" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Logo" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Logo" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        @@include('./partials/footer.html')
+        @@include('./partials/sidemenu.html')
+        @@include('./partials/instagram-modal.html')
+    </div>
+    
+</body>
+</html>

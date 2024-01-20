@@ -1,0 +1,97 @@
+@import "fonts";
+@import "reset";
+@import "scrollbar";
+@import "mixins";
+@import "variables";
+@import "selection";
+
+body {
+    font-family: $font-barlow;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-dark;
+    background-color: $color-white;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@import "blocks/header";
+@import "blocks/UI/burger";
+@import "blocks/UI/icon";
+@import "blocks/UI/button";
+@import "blocks/UI/checkbox";
+@import "blocks/UI/input";
+@import "blocks/UI/radio";
+@import "blocks/UI/select";
+@import "blocks/UI/textarea";
+@import "blocks/menu";
+@import "blocks/hero";
+@import "blocks/subheader";
+@import "blocks/UI/breadcrumbs";
+@import "blocks/section";
+@import "blocks/logos";
+@import "blocks/coupons";
+@import "blocks/faq";
+@import "blocks/UI/accordion";
+@import "blocks/map";
+@import "blocks/instagram-modal";
+@import "blocks/modal";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/UI/star-rating";
+@import "blocks/customers";
+@import "blocks/testimonials";
+@import "blocks/employee";
+@import "blocks/experience";
+@import "blocks/estimate";
+@import "blocks/not-found";
+@import "blocks/contact-form";
+@import "blocks/UI/pagination";
+@import "blocks/UI/play-button";
+@import "blocks/big-letter";
+@import "blocks/repair";
+@import "blocks/team";
+@import "blocks/tasks";
+@import "blocks/services/services";
+@import "blocks/services/service-details.scss";
+@import "blocks/services/domestic-services";
+@import "blocks/services/all-services";
+@import "blocks/services/support-services";
+@import "blocks/services/maintenance-services";
+@import "blocks/pricing";
+@import "blocks/pricing-card.scss";
+@import "blocks/wysiwyg-editor";
+@import "blocks/benefits";
+@import "blocks/comments-form";
+@import "blocks/statistics";
+@import "blocks/company";
+@import "blocks/comments";
+@import "blocks/recent-articles";
+@import "blocks/sidebar/sidebar";
+@import "blocks/sidebar/categories-sidebar";
+@import "blocks/sidebar/gallery-sidebar";
+@import "blocks/sidebar/meta-sidebar";
+@import "blocks/sidebar/posts-sidebar";
+@import "blocks/blog/article";
+@import "blocks/blog/blog-content";
+@import "blocks/blog/article-info";
+@import "blocks/blog/blog-comments";
+@import "blocks/UI/social";
+@import "blocks/copyright";
+@import "blocks/footer";

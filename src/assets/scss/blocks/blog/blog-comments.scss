@@ -1,0 +1,14 @@
+.blog-comments {
+    max-height: 64rem;
+    margin-bottom: 8rem;
+    overflow: hidden auto;
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $color-dark;
+        margin-bottom: 2rem;
+    }
+}

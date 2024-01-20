@@ -1,0 +1,100 @@
+.contacts {
+    display: grid;
+    grid-template-columns: 1.558fr 1fr;
+    gap: 4rem 7.2rem;
+
+    @include breakpoint($laptop) {
+        grid-template-columns: 1fr;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        border: .1rem solid #d8d8d8;
+        padding: 4rem;
+        background-color: $color-white;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+
+        @include breakpoint($mobile-small) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__left {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7rem;
+        height: 7rem;
+        padding: 1.1rem;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            border: .1rem solid $color-red;
+            border-radius: 50%;
+        }
+    }
+
+    &__icon {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        line-height: 1;
+        color: $color-dark;
+        margin-bottom: .2rem;
+    }
+
+    &__link {
+        font-size: 2.8rem;
+        color: $color-dark;
+        transition: opacity .15s ease;
+
+        &:hover,
+        &:focus {
+            opacity: .75;
+        }
+    }
+
+    &__chat {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $color-red;
+        padding: 1.35rem 4.8rem;
+        margin: 2.5rem 0 0 8.8rem;
+        transition: background-color .15s ease;
+
+        &:focus,
+        &:hover {
+            background-color: $color-red-hover;
+        }
+
+        @include breakpoint($mobile-small) {
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+}

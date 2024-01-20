@@ -1,0 +1,125 @@
+.wysiwyg-editor {
+    & img {
+        display: inline;
+        max-width: 100%;
+        height: auto;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        color: $color-dark;
+        margin-bottom: 3rem;
+    }
+
+    & h1 {
+        font-size: 2.6rem;
+    }
+
+    & h2 {
+        font-size: 2.3rem;
+    }
+
+    & h3 {
+        font-size: 2rem;
+    }
+
+    & h4,
+    & h5,
+    & h6 {
+        font-size: 1.7rem;
+    }
+
+
+    & p,
+    & li {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1.75;
+        color: $color-gray;
+        margin-bottom: 2.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & p {
+        & img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    & ul {
+        margin: 0 0 3.5rem;
+        padding: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & li {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        margin-bottom: .5rem;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            border: .2rem solid $color-red;
+            border-radius: 50%;
+        }
+    }
+
+    & a {
+        color: #686c6f;
+        transition: color .1s ease;
+
+        &:hover,
+        &:focus {
+            color: #aaaaaa;
+        }
+    }
+
+    & blockquote {
+        position: relative;
+        background-color: $color-red;
+        margin: 0 0 3.5rem;
+        padding: 5rem 7rem 5rem 13rem;
+
+        @include breakpoint($mobile-small) {
+            padding: 4rem;
+        }
+
+        &::before {
+            position: absolute;
+            top: 4.1rem;
+            left: 7.5rem;
+            content: "“";
+            font-size: 8.8rem;
+            font-weight: 700;
+            line-height: 1;
+            color: $color-white;
+
+            @include breakpoint($mobile-small) {
+                display: none;
+            }
+        }
+
+        & p {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.6;
+            color: $color-white;
+            margin: 0;
+        }
+    }
+}

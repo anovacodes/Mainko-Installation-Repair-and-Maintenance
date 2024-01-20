@@ -1,0 +1,162 @@
+.contact-form {
+    background-color: $color-cream;
+    border-top: .9rem solid $color-red;
+    padding: 4rem 10rem 6rem;
+
+    @include breakpoint($mobile) {
+        padding: 3.5rem 6rem 5rem;
+    }
+
+    @include breakpoint($mobile-small) {
+        padding: 3rem;
+    }
+
+    &__section {
+        margin-bottom: 4.5rem;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #282828;
+        margin-bottom: 2.5rem;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 3.217fr;
+        align-items: center;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+
+        &_start {
+            align-items: flex-start;
+        }
+
+        &_checkbox {
+            max-height: 10.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem 14rem;
+
+            @include breakpoint($tablet) {
+                max-height: none;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint($mobile-medium) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &__item_start &__name {
+        padding-top: 2rem;
+
+        @include breakpoint($tablet) {
+            padding: 0;
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #282828;
+
+        @include breakpoint($tablet) {
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    &__fields {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &_double {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+
+            @include breakpoint($mobile) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &_radio {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem 4.5rem;
+        }
+    }
+
+    &__description {
+        font-family: $font-poppins;
+        font-size: 1.6rem;
+        line-height: 1.75;
+        color: #282828;
+        margin: 1.2rem 0 -1.2rem;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        user-select: none;
+
+        & > label {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #282828;
+            cursor: pointer;
+            padding-left: 1rem;
+        }
+
+        &_big > label {
+            font-size: 2rem;
+        }
+    }
+
+    &__radio {
+        display: flex;
+        align-items: center;
+        user-select: none;
+
+        & > label {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #282828;
+            cursor: pointer;
+            padding-left: 1rem;
+        }
+    }
+
+    &__footer {
+        display: grid;
+        grid-template-columns: 1fr 3.217fr;
+        align-items: flex-start;
+
+        &::before {
+            content: "";
+            display: block;
+        }
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__button {
+        width: 22rem;
+    }
+}

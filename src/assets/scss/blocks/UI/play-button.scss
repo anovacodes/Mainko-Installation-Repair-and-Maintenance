@@ -1,0 +1,25 @@
+.play-button {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    pointer-events: none;
+    transition: transform .5s ease;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+                    rotate(90deg);
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 1.5rem solid transparent;
+        border-right: 1.5rem solid transparent;
+        border-bottom: 2.5rem solid $color-red;
+        pointer-events: none;
+    }
+}

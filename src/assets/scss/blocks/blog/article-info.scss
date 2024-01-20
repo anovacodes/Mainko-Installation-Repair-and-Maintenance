@@ -1,0 +1,29 @@
+.article-info { 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1;
+
+    &__date,
+    &__block {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-red;
+    }
+
+    &__date {
+        margin-right: 3rem;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-right: 2.5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

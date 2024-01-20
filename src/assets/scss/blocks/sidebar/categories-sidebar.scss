@@ -1,0 +1,44 @@
+.categories-sidebar {
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item:nth-child(even) &__link {
+        background-color: $color-cream;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-red;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #444444;
+        background-color: #fcfcfc;
+        padding: 1.2rem 3.5rem 1.2rem 3rem;
+        transition: background-color .1s ease,
+                    color .1s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-red;
+        }
+
+        & span {
+            display: inline-block;
+            max-width: 13rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}

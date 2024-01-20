@@ -1,0 +1,32 @@
+.blog-content {
+    padding: 12.5rem 0 12rem;
+
+    @include breakpoint($mobile) {
+        padding: 7rem 0;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 31.6239%;
+        gap: 7.5rem 3rem;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        margin: 0 0 7.5rem;
+        padding: 0;
+    }
+
+    &__pagination {
+        @include breakpoint($tablet) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.section {
+    background-color: $color-white;
+    padding: 12rem 0;
+
+    &_pricing {
+        background-color: $color-cream;
+
+        @include breakpoint($mobile) {
+            padding: 7rem 0;
+        }
+    }
+
+    &_pricing &__header {
+        margin-bottom: 9rem;
+    }
+
+    &_zero {
+        padding: 0;
+    }
+
+    &_testimonials {
+        padding: 0 0 12rem;
+    }
+
+    &_estimate {
+        padding: 6rem 0 12rem;
+
+        @include breakpoint($mobile) {
+            padding: 6rem 0;
+        }
+    }
+
+    &_engineers {
+        @include breakpoint($mobile) {
+            padding: 7rem 0;
+        }
+    }
+
+    &_engineers &__subtitle {
+        line-height: 1.15;
+    }
+
+    &_experience {
+        padding: 11.5rem 0 0;
+
+        @include breakpoint($mobile) {
+            padding: 7rem 0 0;
+        }
+    }
+
+    &_benefits {
+        padding: 19rem 0 12rem;
+    }
+
+    &_company {
+        padding: 0;
+    }
+
+    &_services {
+        &_maintenance {
+            padding: 10rem 0 18rem;
+            background-color: $color-cream;
+
+            @include breakpoint($mobile) {
+                padding: 7rem 0;
+            }
+        }
+
+        &_support {
+            padding: 5rem 0 0;
+            background-color: $color-cream;
+
+            @include breakpoint($mobile-medium) {
+                padding: 0;
+            }
+        }
+
+        &_all {
+            padding: 10rem 0 11.5rem;
+
+            @include breakpoint($mobile) {
+                padding: 7rem 0 8rem;
+            }
+        }
+    }
+
+    &_articles {
+        padding: 9rem 0 12rem;
+
+        @include breakpoint($mobile) {
+            padding: 9rem 0 6rem;
+        }
+    }
+
+    &_customers {
+        padding: 0 0 12rem;
+    }
+
+    &_logos {
+        background-color: $color-cream;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 28rem 0 12rem;
+
+        @include breakpoint($mobile) {
+            padding: 7rem 0 12rem;
+        }
+    }
+
+    &__header {
+        width: 50%;
+        margin: 0 auto 5rem;
+        text-align: center;
+
+        @include breakpoint($mobile) {
+            width: 65%;
+        }
+
+        @include breakpoint($mobile-small) {
+            width: 90%;
+        }
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-red;
+        margin-bottom: .5rem;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 2.2rem;
+            height: 2.2rem;
+            border: .3rem solid $color-red;
+            border-radius: 50%;
+            margin: 0 auto 2.5rem;
+        }
+    }
+
+    &__subtitle {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 5.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-dark;
+    }
+}

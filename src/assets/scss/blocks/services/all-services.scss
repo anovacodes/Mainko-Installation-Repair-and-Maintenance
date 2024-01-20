@@ -1,0 +1,208 @@
+.all-services {
+    padding: 0 4rem;
+
+    @include breakpoint($mobile-medium) {
+        padding: 0;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 11rem;
+
+        @include breakpoint($tablet) {
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+
+        @include breakpoint($mobile) {
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__left {
+        position: relative;
+        height: 66rem;
+        flex: 0 0 58.68%;
+        user-select: none;
+        overflow: hidden;
+
+        @include breakpoint($tablet) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__pattern {
+        position: absolute;
+        top: 0;
+        right: 6rem;
+        z-index: 1;
+    }
+
+    &__image {
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        max-height: 61rem;
+        max-width: 52.5rem;
+        z-index: 2;
+    }
+
+    &__video {
+        position: absolute;
+        bottom: 8.5rem;
+        right: 0;
+        height: 23rem;
+        width: 54.4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 3;
+        cursor: pointer;
+
+        @include breakpoint($mobile-medium) {
+            width: 80%;
+            height: 25rem;
+        }
+    }
+
+    &__video:hover .play-button {
+        transform: scale(1.2);
+    }
+
+    &__right {
+        flex: 1 1 100%;
+        transform: translateY(1.7rem);
+
+        @include breakpoint($tablet) {
+            transform: translateY(0);
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-dark;
+
+        @include breakpoint($mobile) {
+            font-size: 4.2rem;
+        }
+    }   
+
+    &__body {
+        padding-left: 7rem;
+
+        @include breakpoint($tablet) {
+            padding: 0;
+        }
+    }
+
+    &__list {
+        margin: 4.5rem 0 4rem;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1;
+        margin-bottom: 2.5rem;
+        color: $color-gray;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            border: .2rem solid $color-red;
+            border-radius: 50%;
+        }
+    }
+
+    &__button {
+        width: 23.5rem;
+
+        @include breakpoint($tablet) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.benefits-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 11.5rem;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint($mobile) {
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        position: relative;
+        text-align: center;
+
+        &::after {
+            content: "";
+            display: block;
+            width: .1rem;
+            height: 12rem;
+            position: absolute;
+            top: 50%;
+            right: -5.75rem;
+            transform: translateY(-50%);
+            background-color: #e8e8e8;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        @include breakpoint($mobile) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__icon {
+        height: 10.5rem;
+
+        & > img {
+            height: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+        color: $color-dark;
+        margin: 3rem 0 1.5rem;
+
+        @include breakpoint($mobile) {
+            font-size: 2.6rem;
+        }
+    }
+
+    &__text {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        color: $color-gray;
+    }
+}

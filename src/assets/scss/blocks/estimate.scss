@@ -1,0 +1,84 @@
+.estimate {
+    &__header {
+        background-size: 32%;
+        background-position: top right;
+        background-repeat: no-repeat;
+
+        @include breakpoint($mobile) {
+            background-size: 60%;
+        }
+
+        @include breakpoint($mobile-small) {
+            background-image: none !important;
+        }
+    }
+
+    &__info {
+        width: 62.39%;
+        padding: 9rem 0 10rem;
+
+        @include breakpoint($mobile) {
+            width: 85%;
+            padding: 5rem 0 7rem;
+        }
+
+        @include breakpoint($mobile-small) {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #282828;
+
+        @include breakpoint($mobile) {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__text {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1.66;
+        color: $color-gray;
+        margin: 3rem 0 1rem;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: flex-end;
+        gap: 0 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-gray;
+
+        & > span {
+            line-height: 2.1;
+        }
+
+        @include breakpoint($mobile-small) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #da0d12;
+        transition: color .1s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-red-hover;
+        }
+
+        @include breakpoint($mobile) {
+            font-size: 3.2rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@@if (options.type == "button") {
+    <button class="button @@classes" type="@@options.buttonType">
+        <span class="button__content">@@value</span>
+        <span class="button__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="12px">
+                <path fill-rule="evenodd"  fill="rgb(238, 29, 34)" d="M0.530,0.794 C1.663,0.794 2.796,0.794 3.929,0.794 C5.340,2.525 6.752,4.257 8.163,5.988 C6.752,7.726 5.340,9.465 3.929,11.202 C2.796,11.202 1.663,11.202 0.530,11.202 C0.530,11.196 0.530,11.190 0.530,11.183 C0.555,11.158 0.580,11.133 0.605,11.108 C1.991,9.408 3.378,7.707 4.765,6.007 C4.765,6.001 4.765,5.994 4.765,5.988 C3.353,4.257 1.942,2.525 0.530,0.794 Z"/>
+            </svg>
+        </span>
+    </button>
+}
+
+@@if (options.type == "link") {
+    <a class="button @@classes" href="@@options.href">
+        <span class="button__content">@@value</span>
+        <div class="button__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="12px">
+                <path fill-rule="evenodd"  fill="rgb(238, 29, 34)" d="M0.530,0.794 C1.663,0.794 2.796,0.794 3.929,0.794 C5.340,2.525 6.752,4.257 8.163,5.988 C6.752,7.726 5.340,9.465 3.929,11.202 C2.796,11.202 1.663,11.202 0.530,11.202 C0.530,11.196 0.530,11.190 0.530,11.183 C0.555,11.158 0.580,11.133 0.605,11.108 C1.991,9.408 3.378,7.707 4.765,6.007 C4.765,6.001 4.765,5.994 4.765,5.988 C3.353,4.257 1.942,2.525 0.530,0.794 Z"/>
+            </svg>
+        </div>
+    </a>
+}
+

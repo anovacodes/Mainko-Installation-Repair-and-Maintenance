@@ -1,0 +1,31 @@
+.sidebar {
+    &__item {
+        padding: 4.5rem 4rem 4rem;
+        border: .1rem solid #d2d2d2;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: .9;
+        text-transform: uppercase;
+        color: $color-dark;
+    }
+
+    &__content {
+        &_categories,
+        &_meta {
+            margin-top: 2.5rem;
+        }
+
+        &_posts,
+        &_gallery {
+            margin-top: 4rem;
+        }
+    }
+}

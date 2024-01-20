@@ -1,0 +1,163 @@
+.coupons {
+    padding: 12.5rem 0 1rem;
+
+    @include breakpoint($mobile) {
+        padding: 7rem 0 1rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem 7rem;
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+    }
+}
+
+.coupon {
+    height: 100%;
+    background-color: $color-cream;
+    padding: 1rem;
+
+    &_red {
+        background-color: $color-red;
+    }
+
+    &_white {
+        background-color: $color-white;
+    }
+
+    &__inner {
+        height: inherit;
+        background-color: $color-white;
+        border: .3rem dashed $color-red;
+        padding: 3.7rem 5rem;
+
+        @include breakpoint($mobile-small) {
+            padding: 2.4rem 3rem;
+        }
+    }
+
+    &__title {
+        font-size: 5.5rem;
+        font-weight: 700;
+        line-height: 1.09;
+        text-transform: uppercase;
+        color: #282828;
+
+        @include line-clamp(4);
+
+        & > span:last-child {
+            color: $color-red;
+        }
+
+        @include breakpoint($mobile-small) {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__text {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1.66;
+        color: $color-gray;
+        margin: 1rem 0 3rem;
+
+        @include line-clamp(5);
+    }
+
+    &__button {
+        width: 26rem;
+
+        @include breakpoint($mobile-small) {
+            width: 23rem;
+        }
+    }
+}
+
+.coupons-slider {
+    height: 68rem;
+
+    & .swiper-slide {
+        background-color: $color-gray;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > img {
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__coupon {
+        width: 47%;
+        position: absolute;
+        left: 6rem;
+        bottom: 5rem;
+
+
+        @include breakpoint($tablet) {
+            width: 60%;
+        }
+
+        @include breakpoint($mobile-medium) {
+            width: auto;
+            right: 6rem;
+        }
+
+        @include breakpoint($mobile-small) {
+            left: 2rem;
+            right: 2rem;
+            bottom: 2rem;
+        }
+    }
+
+    &__navigation {
+        position: absolute;
+        right: 6rem;
+        bottom: 5rem;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+
+        @include breakpoint($mobile) {
+            display: none;
+        }
+    }
+
+    &__arrow {
+        position: relative;
+        width: 6.9rem;
+        height: 6.9rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-red;
+        border-radius: 50%;
+        transition: opacity .2s ease;
+        z-index: 12;
+
+        &:hover {
+            opacity: .25;
+        }
+
+        &:first-child {
+            margin-right: -.7rem;
+            background-color: $color-white;
+            z-index: 11;
+        }
+    }
+}

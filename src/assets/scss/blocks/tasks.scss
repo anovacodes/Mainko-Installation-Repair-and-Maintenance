@@ -1,0 +1,74 @@
+.tasks {
+    padding: 11rem 0 12.5rem;
+
+    @include breakpoint($mobile) {
+        padding: 7rem 0;
+    }
+
+    &__title {
+        width: 66.666%;
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        color: $color-dark;
+        margin: 0 auto 5rem;
+
+        @include breakpoint($tablet) {
+            width: 80%;
+        }
+
+        @include breakpoint($mobile) {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1.05769fr;
+        align-items: center;
+        gap: 4rem 10rem;
+
+        @include breakpoint($mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__info {
+        
+    }
+
+    &__text {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1.66;
+        color: $color-gray;
+        margin-bottom: 2.8rem;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1.75;
+        color: $color-gray;
+        margin-bottom: .5rem;
+
+        &::before {
+            content: "";
+            display: block;
+            min-width: 1.4rem;
+            width: 1.4rem;
+            height: 1.4rem;
+            border: .2rem solid $color-red;
+            border-radius: 50%;
+        }
+    }
+}

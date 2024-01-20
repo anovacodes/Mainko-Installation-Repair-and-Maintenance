@@ -1,0 +1,36 @@
+.logos {
+    &__item {
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-white;
+        user-select: none;
+    }
+
+    &__item:hover &__image {
+        animation: scaleLogo 1s ease infinite;
+    }
+
+    &__image {
+        max-height: 66.6%;
+        max-width: 72.72%;
+    }
+}
+
+@keyframes scaleLogo {
+    0% {
+        scale: 1;
+        opacity: 1;
+    }
+
+    50% {
+        scale: .75;
+        opacity: .75;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}

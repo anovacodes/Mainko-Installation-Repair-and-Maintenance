@@ -1,0 +1,42 @@
+.meta-sidebar {
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 1;
+        color: #444;
+        padding: 1rem 0;
+        transition: color .1s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-red;
+
+            &::before {
+                transform: rotate(90deg)
+                            translateY(-.7rem);
+                border-bottom-color: $color-red;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: .6rem solid transparent;
+            border-right: .6rem solid transparent;
+            border-bottom: .7rem solid #444;
+            transform: rotate(90deg);
+            margin-right: 1.4rem;
+            transition: border-color .1s ease,
+                        transform .2s ease;
+        }
+    }
+}

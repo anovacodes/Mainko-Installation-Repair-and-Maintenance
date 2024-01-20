@@ -1,0 +1,148 @@
+.company {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    @include breakpoint($tablet) {
+        flex-wrap: wrap;
+    }
+
+    &__left {
+        flex: 1 1 100%;
+    }
+
+    &__right {
+        height: 63.5rem;
+        flex: 0 0 55.555%;
+        position: relative;
+        user-select: none;
+
+        @include breakpoint($tablet) {
+            flex-basis: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-dark;
+
+        @include breakpoint($mobile) {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__text {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        line-height: 1.66;
+        color: $color-gray;
+        margin: 2.5rem 0 4rem;
+    }
+
+    &__button {
+        width: 23.5rem;
+
+        @include breakpoint($tablet) {
+            margin: 0 auto;
+        }
+    }
+
+    &__pattern {
+        position: absolute;
+
+        &_small {
+            top: 30rem;
+            left: 0;
+            z-index: 3;
+            animation: moveItem 8s ease infinite 1s;
+        }
+
+        &_big {
+            bottom: 0;
+            right: -6rem;
+            z-index: 1;
+        }
+
+        @include breakpoint($tablet) {
+            display: none;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 4.3rem;
+        max-height: 59rem;
+        max-width: 57rem;
+        right: 0;
+        z-index: 2;
+
+        @include breakpoint($tablet) {
+            position: relative;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__customers {
+        position: absolute;
+        top: 31rem;
+        left: 1.2rem;
+        display: inline-block;
+        background-color: $color-white;
+        padding: 4rem 4rem 3.5rem 3.5rem;
+        border-radius: 2.8rem;
+        border-top-right-radius: 10rem;
+        box-shadow: 3rem 3rem 8.1rem rgba(0, 0, 0, .14);
+        z-index: 4;
+        animation: moveItem 8s ease infinite;
+    }
+
+    &__count {
+        display: flex;
+        align-items: flex-start;
+        gap: .8rem;
+        font-size: 8.8rem;
+        font-weight: 700;
+        line-height: .9;
+        text-transform: uppercase;
+        color: $color-red;
+        margin-bottom: 1.1rem;
+
+        &::after {
+            content: "+";
+            line-height: .5;
+        }
+    }
+
+    &__satisfied {
+        max-width: 13.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.1;
+        text-transform: uppercase;
+        color: $color-black;
+    }
+}
+
+@keyframes moveItem {
+    0% {
+        transform: translateY(-5rem);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5rem);
+    }
+}

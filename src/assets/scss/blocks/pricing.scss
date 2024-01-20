@@ -1,0 +1,13 @@
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem 3rem;
+
+    @include breakpoint($tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($mobile) {
+        grid-template-columns: 1fr;
+    }
+}
