@@ -27,7 +27,7 @@ new SlimSelect({
 })
 
 initSwiper("#hero-slider", {
-    modules: [ Pagination, Autoplay, EffectFade ],
+    modules: [Pagination, Autoplay, EffectFade],
     effect: "fade",
     loop: true,
     autoplay: {
@@ -66,7 +66,7 @@ initSwiper("#logos-slider", {
 })
 
 initSwiper("#testimonial-slider", {
-    modules: [ Pagination ],
+    modules: [Pagination],
     spaceBetween: 50,
     pagination: {
         el: "#testimonial-slider__pagination",
@@ -75,7 +75,7 @@ initSwiper("#testimonial-slider", {
 })
 
 initSwiper("#domestic-services__slider", {
-    modules: [ Navigation ],
+    modules: [Navigation],
     spaceBetween: 45,
     slidesPerView: 1,
     centeredSlides: true,
@@ -89,10 +89,10 @@ initSwiper("#domestic-services__slider", {
             slidesPerView: 2
         }
     }
-})  
+})
 
 initSwiper("#repair-slider", {
-    modules: [ Navigation, Parallax ],
+    modules: [Navigation, Parallax],
     parallax: true,
     speed: 1000,
     initialSlide: 1,
@@ -103,7 +103,7 @@ initSwiper("#repair-slider", {
 })
 
 initSwiper("#engineers-slider", {
-    modules: [ Autoplay ],
+    modules: [Autoplay],
     autoplay: {
         delay: 5000
     },
@@ -120,7 +120,7 @@ initSwiper("#engineers-slider", {
 })
 
 initSwiper("#coupons-slider", {
-    modules: [ Navigation ],
+    modules: [Navigation],
     spaceBetween: 80,
     loop: true,
     navigation: {
@@ -130,7 +130,7 @@ initSwiper("#coupons-slider", {
 })
 
 export const reviewsSlider = initSwiper("#reviews-slider", {
-    modules: [ Pagination ],
+    modules: [Pagination],
     spaceBetween: 80,
     pagination: {
         el: "#reviews-slider__pagination",
