@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=development gulp build",
     "prod": "cross-env NODE_ENV=production gulp build"
   },
-  "author": "Andrey Sydorov <anovacodes@gmail.com>",
+  "author": "Andrii Sydorov <anovacodes@gmail.com>",
   "license": "ISC",
   "babel": {
     "presets": [
