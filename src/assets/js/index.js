@@ -8,6 +8,25 @@ import { handleSliderModal } from "./modules/handle-slider-modal.js"
 import { handleDefaultModal } from "./modules/default-modal.js"
 import { handleReviewsSlider } from "./modules/reviews-slider.js"
 import { handleAccordion } from "./modules/accordion.js"
+import { pageViewer } from "./modules/page-viewer.js"
+
+pageViewer([
+    { label: "Home", url: "./" },
+    { label: "404", url: "./404.html" },
+    { label: "About", url: "./about.html" },
+    { label: "Appointment", url: "./appointment.html" },
+    { label: "Details", url: "./blog-details.html" },
+    { label: "Blog", url: "./blog.html" },
+    { label: "Contact", url: "./contacts.html" },
+    { label: "Coupons", url: "./coupons.html" },
+    { label: "FAQ", url: "./faq.html" },
+    { label: "Get an Estimate", url: "./get-an-estimate.html" },
+    { label: "Maintenance", url: "./maintenance-programs.html" },
+    { label: "Service Details", url: "./service-details.html" },
+    { label: "Services", url: "./services.html" },
+    { label: "Team", url: "./team.html" },
+    { label: "Testimonials", url: "./testimonials.html" }
+])
 
 export const header = document.getElementById("header")
 
@@ -82,7 +101,7 @@ initSwiper("#domestic-services__slider", {
     loop: true,
     navigation: {
         nextEl: "#domestic-services__arrow_right",
-        prevEl: "#domestic-services__arrow_left",
+        prevEl: "#domestic-services__arrow_left"
     },
     breakpoints: {
         768: {
@@ -98,7 +117,7 @@ initSwiper("#repair-slider", {
     initialSlide: 1,
     navigation: {
         nextEl: "#repair__next",
-        prevEl: "#repair__prev",
+        prevEl: "#repair__prev"
     }
 })
 
@@ -125,7 +144,7 @@ initSwiper("#coupons-slider", {
     loop: true,
     navigation: {
         nextEl: "#coupons-slider__next",
-        prevEl: "#coupons-slider__prev",
+        prevEl: "#coupons-slider__prev"
     }
 })
 
@@ -142,7 +161,7 @@ const fixHeader = () => {
     const offset = window.scrollY
     const isFixed = header.classList.contains("fixed")
 
-    if (window.innerWidth <= 545 & !isFixed) {
+    if ((window.innerWidth <= 545) & !isFixed) {
         return header.classList.add("fixed")
     }
 
